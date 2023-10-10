@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>document.wrtie() 활용</title>
+
+</head>
+<body>
+	<h3>document.write()활용
+	</h3>
+	<hr>
+	<script type="text/javascript">
+		document.write("<h3>Welcome!</h3>");
+		document.write("2+5는 <br>");
+		document.write("<mark>7 입니다. </mark>")
+
+		let ret = prompt("이름을 입력하시오", "");
+		if(ret==null){
+			//취소 버튼이나 다이얼로그를 닫은 경우
+			document.write("취소했습니다...")
+		}
+		else if(ret==""){
+			//문자열 입력 없이 확인 버튼 누른 경우
+			document.write("이름을 입력해주세요 	");
+		}
+		else {
+			//ret에는 사용자가 입력한 문자열
+			document.write("입력한 문자는 = "+ret);
+		}
+
+	</script>
+
+</body>
+</html>

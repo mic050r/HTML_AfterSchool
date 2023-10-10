@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>document.wrtie() 활용</title>
+
+</head>
+<body>
+	<h3>document.write()활용
+	</h3>
+	<hr>
+	<script type="text/javascript">
+		document.write("<h3>Confirm 메시지 기능!</h3>");
+
+		let ret = confirm("전송할까요????");
+		if(ret==true){
+			//확인 버튼
+			document.write("전송합니다...")
+		}
+		else {
+			//취소 버튼
+			document.write("전송을 취소합니다...");
+		}
+
+	</script>
+
+</body>
+</html>
