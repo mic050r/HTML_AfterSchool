@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>테이블의 경계선</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 610px;/*표의 폭 넓이*/
+		}
+		table, td, th{
+			/*border-collapse: collapse;*/
+			border: solid 1px #ef9a9a;
+		}
+		tr {
+			height: 40px;
+			text-align: center;
+		}
+		#col1 {
+			width: 90px;
+		}
+		#col2, #col3 {
+			width: 80px;
+		}
+		#col4, #col5 {
+			width: 100px;
+		}
+		#jemok {
+		background-color: #ffedd2;
+		}
+		.trainnum{
+			background-color: pink;
+			color: #f1477b;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+		
+	</style>
+</head>
+<body>
+	<h2>KTX열차표 예매</h2>
+
+	<table>
+		<tr id="jemok">
+			<th>열차번호</th>
+			<th>출발</th>
+			<th>도착</th>
+			<th>특실</th>
+			<th>일반실</th>
+			<th>소요시간</th>
+		</tr>
+		<tr>
+			<td class="trainnum">175</td>
+			<td>서울<br>21:00</td>
+			<td>부산<br>23:44</td>
+			<td><img src="full.png"></td>
+			<td><img src="full.png"></td>
+			<td>02:44</td>
+		</tr>
+		<tr>
+			<td id="col1" class="trainnum">177</td>
+			<td id="col2">서울<br>21:30</td>
+			<td id="col3">부산<br>00:08</td>
+			<td id="col4"><img src="empty.png"></td>
+			<td id="col5"><img src="empty.png"></td>
+			<td>02:38</td>
+		</tr>
+		<tr>
+			<td class="trainnum">179</td>
+			<td>서울<br>22:00</td>
+			<td>부산<br>00:42</td>
+			<td><img src="empty.png"></td>
+			<td><img src="empty.png"></td>
+			<td>02:42</td>
+
+		</tr>
+		
+	</table>
+
+</body>
+</html>
